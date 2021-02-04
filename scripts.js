@@ -27,9 +27,14 @@ const Transaction = {
     Transaction.all.push(transaction);
   },
 
+  edit(index) {
+    Modal.open();
+    App.reload();
+    Transaction.all.splice(index, 1);
+  },
+
   remove(index) {
     Transaction.all.splice(index, 1);
-
     App.reload();
   },
 
@@ -77,9 +82,8 @@ const DOM = {
       <td class="description">${transaction.description}</td>
       <td class="${CSSclass}">${amount}</td>
       <td class="date">${transaction.date}</td>
-      <td>
-        <img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover transação">
-      </td>
+      <td><img onclick="Transaction.edit(${index})" src="./assets/pencil.svg" alt="Editar transação"</td>
+      <td><img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover transação"></td>
   `;
     return html;
   },

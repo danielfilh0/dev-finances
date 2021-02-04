@@ -12,7 +12,7 @@ as transações.</p>
 - [x] O Usuário, ao clicar em  '+ Nova Transação', deverá fornecer uma Descrição, Valor e a Data da Transação.
 - [x] O campo Valor fica verde se o mesmo for Positivo, e fica vermelho se for Negativo.
 - [x] O Usuário pode editar e remover transações já existentes.
-- [x] O Aplicativo trabalha com o LocalStorage, sendo possível recarregar a página sem perder os dados cadastrados.
+- [x] A Aplicação trabalha com o LocalStorage, sendo possível recarregar a página sem perder os dados cadastrados.
 
 <h2>Deployment</h2>
 <a href="https://danielfilh0.github.io/dev-finances/" target="_blank">dev.finance$</a>
